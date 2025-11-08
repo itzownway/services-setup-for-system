@@ -130,9 +130,9 @@ Go this This = https://kdenlive.org/download/
 	                                                                        |
 																			|------------ ubuntu recover screen (some time recover will work) ---> else fix we can fix from terminal (in this recover we will get the terminal)
 																			|                      |
-																			|                      |---- 
-																			|                      |---- 
-																			|                      |---- 
+																			|                      |---- apt install --reinstall gdm3 ubuntu-desktop -y
+																			|                      |---- mkdir -p "[daemon]\nWaylandEnable=false" > /etc/gdm3/custom.conf
+																			|                      |---- update-initramfs
 																			|                      |---- reboot
 																			|
 																			|
