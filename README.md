@@ -140,7 +140,76 @@ Go this This = https://kdenlive.org/download/
 
 
 
+Free kdenlive Video Editing Software Ubuntu
+===========================================
 
+
+Install kdenlive -1
+===================
+Go this This = https://kdenlive.org/download/
+
+
+   Download ---> linux 
+          
+           - AppImage
+           
+           - cd Downloads
+           - chmod +x kdenlive-25.08.3-x86_64.AppImage
+          
+       To Start The application (lunch application)
+       
+                    - ./kdenlive-25.08.3-x86_64.AppImage
+
+Install kdenlive -2 
+====================
+
+   1) visit the site = https://kdenlive.org/download/
+   
+   
+   2) select the -- linux one
+   
+   3) download - Flatpak way
+   
+              to install this run this command 
+                       |
+                       |----------------- flatpak install flathub org.kde.kdenlive
+                       |
+                       |----------------- flatpak run org.kde.kdenlive
+                       |
+                       |----------------- sudo apt install flatpak  (may got some error )
+                       |
+          
+				  You’re almost there—Flatpak is installed, but Flathub isn’t added yet. Do this:
+
+			          1) Add Flathub (the app repo)
+      
+			             command -  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+			          2) Install Kdenlive from Flathub
+      
+			             command -   flatpak install flathub org.kde.kdenlive
+
+			         3) Fix the XDG_DATA_DIRS notice (so the app shows in your menu)
+
+			          That message just means your session hasn’t picked up Flatpak’s paths yet. Log out and log back in (or reboot) once after 
+			          step 2. After that, “Kdenlive” should appear in your app launcher.
+
+			        Optional (GUI install via “Ubuntu Software”)
+			          If you want Flatpak apps to appear in Ubuntu Software:
+			             sudo apt install gnome-software gnome-software-plugin-flatpak
+			             (Then log out/in and open “Software” → search Kdenlive.)
+
+                       
+         Alternatives (if you prefer)
+
+                Snap: sudo snap install kdenlive
+
+                  AppImage: you already downloaded one—just make it executable and run it:
+
+                           1) chmod +x ~/Downloads/kdenlive-*.AppImage
+                           2) ~/Downloads/kdenlive-*.AppImage
+
+ 
 
 
 
